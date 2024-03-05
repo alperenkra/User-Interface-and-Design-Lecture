@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+
+        <table border="1">
+            <tr align="center">
+                <th>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="name" placeholder="Enter Your Name">
+                </th>
+                <th>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Your Password">
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <label for="gender">Your Gender</label>
+
+                    <input type="radio" id="male" name="gender" value="male" multiple>
+                    <label for="male">Male</label>
+
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </th>
+
+                <th>
+                    <label for="courses">Select Your Courses </label>
+                    <input type="checkbox" id="math" name="courses" value="Math" checked>
+                    <label for="math">Math</label>
+                    <input type="checkbox" id="oop" name="courses" value="oop" checked>
+                    <label for="oop">OOP</label>
+                </th>
+            </tr>
+
+            <tr>
+                <th colspan="2">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </th>
+
+            </tr>
+
+        </table>
+
+        <label for="file">Choose Your File</label>
+        <input type="file" name="file" id="file" multiple>
+
+        <br>
+        <hr>
+
+        <p>
+
+            <label for="cars">Select Cars</label>
+            <select name="cars" id="cars">
+                <option value="">--Please Select a Car--</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="porsche">Porsche</option>
+            </select>
+
+        </p>
+
+        <input list="universities">
+        <datalist id="universities">
+            <option value="sau">Sakarya University</option>
+            <option value="itu">Istanbul Technic University</option>
+        </datalist>
+    </form>
+
+
+
+</body>
+
+</html>
