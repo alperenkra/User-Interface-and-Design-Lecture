@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>XXX DESIGN PROGRAM SETTING and CONTRACT</h1>
+
+    <contract>
+        <fieldset>
+            <legend>Contract Confirm</legend>
+            <input type="checkbox" id="contract" name="contract" required>
+            <label for="contract">I accept the accuracy of the information below
+                and confirm the contract
+            </label>
+            <br>
+            <button type="submit">Save Form</button>
+            <button type="reset">Clean Form</button>
+        </fieldset>
+
+    </contract>
+
+    <personalinfo>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <form action="dsa">
+                <table>
+                    <tr>
+                        <td>Form Security</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="id">ID</label>
+                        </td>
+                        <td>
+                            <input type="text" id="id" name="id" placeholder="Your ID" autofocus required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="name">Name</label>
+                        </td>
+                        <td>
+
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="surname">Surname</label>
+                        </td>
+                        <td>
+                            <input type="text" id="surname" name="surname" placeholder="Your Surname" required>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <label for="age">Age</label>
+                        </td>
+                        <td>
+                            <input type="number" id="age" name="age" min="20" max="100" placeholder="Your Age" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="mail">Mail Adress</label>
+                        </td>
+                        <td>
+                            <input type="email" id="mail" name="mail" placeholder="Your Email Adress" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="image">Add an Image</label>
+                        </td>
+                        <td>
+                            <input type="file" id="image" name="image" required>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </personalinfo>
+
+    <otherinfo>
+        <fieldset>
+            <legend>Other Information</legend>
+            <form action="dsa">
+                <table>
+                    <tr>
+                        <th colspan="2">Fields here Cover Professional Experience</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="idate">Entering the Industry Date</label>
+                        </td>
+                        <td>
+                            <input type="date" name="idate" id="idate" required>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Sector Experience
+                        </td>
+                        <td>
+                            <input type="radio" id="1-5" name="exp" value="1-5" checked>
+                            <label for="1-5">1-5 Years</label>
+                            <br>
+                            <input type="radio" id="6-10" name="exp" value="6-10">
+                            <label for="6-10">6-10 Years</label>
+                            <br>
+                            <input type="radio" id="11-15" name="exp" value="11-15">
+                            <label for="11-15">11-15 Years</label>
+                            <br>
+                            <input type="radio" id="15+" name="exp" value="15+">
+                            <label for="15+">15 over Years</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="5">
+                            Programming Language
+                        </td>
+                        <td rowspan="5">
+                            <select name="codelang" id="codelang" multiple size="5" required>
+                                <option value="c#">C#</option>
+                                <option value="php">PHP</option>
+                                <option value="java">Java</option>
+                                <option value="pyth">Python</option>
+                                <option value="js">Javascript</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+    </otherinfo>
+
+    <copy>
+        <fieldset>
+            <legend>Contract copy</legend>
+            <textarea name="text" id="text" cols="50" rows="5" placeholder="lorem ipsum" required></textarea>
+        </fieldset>
+    </copy>
+
+    <maillist>
+        <fieldset>
+            <legend>Mail List</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="mailwant">I want to join the mailing list</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="want" name="maillist" value="want" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mailnotwant">I do not want to join mailing list</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="notwant" name="maillist" value="notwant">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </maillist>
+
+</body>
+
+</html>
