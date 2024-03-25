@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Study</title>
+</head>
+
+<body>
+    <contract>
+        <fieldset>
+            <legend>Contract Confirm</legend>
+            <form action="">
+                <input type="checkbox" id="accept" name="accept" required>
+                <label for="accept">I accept the accuracy of the information of the below and confirm the
+                    contract</label>
+                <input type="submit" id="submit" value="Save Form">
+                <input type="reset" id="reset" value="Clean Form">
+            </form>
+        </fieldset>
+    </contract>
+
+    <personalinfo>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>Form Security</p>
+            <br>
+            <table>
+                <form action="">
+                    <tr>
+                        <td>
+                            <label for="ID">ID</label>
+                        </td>
+                        <td>
+                            <input type="text" id="ID" required placeholder="Write Your ID">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="name">Name</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" required placeholder="Write Your Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="surname">Surname</label></td>
+                        <td><input type="text" id="surname" required placeholder="Write Your Surname"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="age">Age</label></td>
+                        <td><input type="number" id="age" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="mail">Mail Address</label></td>
+                        <td><input type="email" id="mail" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="addimg">Add an Image</label></td>
+                        <td><input type="file" id="addimg" required multiple></td>
+                    </tr>
+                </form>
+            </table>
+        </fieldset>
+    </personalinfo>
+
+    <otherinfo>
+        <fieldset>
+            <legend>Other Information</legend>
+            <b>Fields here Cover Professional Experience</b>
+            <table>
+                <form action="">
+                    <tr>
+                        <td><label for="date">Entering the Industry Date</label></td>
+                        <td><input type="date" id="date" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="exp">Sector Experience</label></td>
+                        <td>
+                            <input type="radio" name="exp">1-5 Years
+                            <br>
+                            <input type="radio" name="exp">6-!0 Years
+                            <br>
+                            <input type="radio" name="exp">11-15 Years
+                            <br>
+                            <input type="radio" name="exp">15 Over Years
+                    </tr>
+                    <tr>
+                        <td>Programming Language</td>
+                        <td>
+                            <select name="lang" id="lang">
+                                <option value="c#">C#</option>
+                                <option value="PHP">PHP</option>
+                                <option value="Java">Java</option>
+                                <option value="Python">Python</option>
+                                <option value="js">JavaScript</option>
+                            </select>
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </fieldset>
+    </otherinfo>
+
+    <contcopy>
+        <fieldset>
+            <legend>Contract Copy</legend>
+            <textarea name="ccopy" id="ccopt" cols="30" rows="4" placeholder="Lorem,ipsum"></textarea>
+        </fieldset>
+    </contcopy>
+
+    <maillist>
+        <fieldset>
+            <legend>Mail List</legend>
+            <label for="want">I want to join the mailing list</label>
+            <input type="radio" name="maillist" id="want">
+            <br>
+            <label for="nwant">I don't want to join the mailing list</label>
+            <input type="radio" name="maillist" id="nwant">
+        </fieldset>
+    </maillist>
+
+</body>
+
+</html>
