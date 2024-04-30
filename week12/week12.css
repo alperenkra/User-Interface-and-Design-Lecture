@@ -1,0 +1,18 @@
+.flow_div {
+    height: 100px;
+    width: 140px;
+    overflow: auto;
+    background-color: cadetblue;
+    margin: 200px 100px 300px 100px;
+    padding: 20px;
+    border: 3px double black;
+    border-radius: 4%;
+}
+
+.flow_div:hover {
+    border: 3px dashed aquamarine;
+}
+
+a:visited {
+    color: aqua;
+}
